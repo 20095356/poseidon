@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Apollo.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Apollo"
+    Shell.FlyoutBehavior="Disabled">
+
+
+    <!-- Login Page -->
+    <ShellContent
+        Title="Login"
+        ContentTemplate="{DataTemplate local:LoginPage}"
+        Route="LoginPage" />
+
+    <TabBar>
+        <!-- Home Page Tab -->
+        <ShellContent
+            Icon="home.svg"
+            Title="Home"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="MainPage" />
+
+        <!-- Lucky3 Page Tab (Assuming you have a Lucky3Page.xaml) -->
+        <ShellContent
+            Icon="shuffle.svg"
+            Title="LuckyThree"
+            ContentTemplate="{DataTemplate local:LuckyThree}"
+            Route="LuckyThree" />
+        <!-- Menu Page -->
+        <ShellContent
+            Icon="menu_burger.svg"
+            Title="Menu"
+            ContentTemplate="{DataTemplate local:MenuPage}"
+            Route="MenuPage" />
+    </TabBar>
+
+    
+
+
+</Shell>
