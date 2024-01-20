@@ -43,7 +43,7 @@ namespace Apollo.Services
         {
             List<Match> matches = new List<Match>();
 
-            string endpoint = baseURL + "/v4/sports/upcoming/odds/?apiKey=your_api_key&regions=au&markets=h2h&bookmakers=unibet";
+            string endpoint = baseURL + "/v4/sports/upcoming/odds/?apiKey=6bd2c963cbb083dc1d4b2ded0436bbcc&regions=au&markets=h2h&bookmakers=unibet";
 
             HttpClient client = new HttpClient();
             HttpResponseMessage response = await client.GetAsync(endpoint);

@@ -48,7 +48,7 @@
             />
 
             <CollectionView x:Name="MatchesCollectionView" Grid.Row="2" Grid.ColumnSpan="2">
-                <CollectionView.ItemsSource>
+                <!-- <CollectionView.ItemsSource>
                     <x:Array Type="{x:Type x:String}">
                         <x:String>Burnley Vs Liverpool Home Draw Away
                         </x:String>
@@ -71,12 +71,17 @@
                         <x:String>Wolves Vs Everton (1.57) (2.56) (2.34)
                         </x:String>
                     </x:Array>
-                </CollectionView.ItemsSource>
+                </CollectionView.ItemsSource-->
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
                         <Grid Padding="0,5">
                             <Frame>
-                                <Label Text="{Binding .}"/>
+                                <!-- <Label Text="{Binding .}"/>-->
+                                <StackLayout>
+                                    <Label Text="{Binding HomeTeam}" />
+                                    <Label Text="{Binding AwayTeam}" />
+                                    <!-- Add other labels or controls for Odds, etc. -->
+                                </StackLayout>
                             </Frame>
                         </Grid>
                     </DataTemplate>
